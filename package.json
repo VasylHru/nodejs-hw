@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/VasylHru/nodejs-hw/issues"
   },
-  "homepage": "https://github.com/VasylHru/nodejs-hw#readme"
+  "homepage": "https://github.com/VasylHru/nodejs-hw#readme",
+  "dependencies": {
+    "prettier": "^3.7.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "nodemon": "^3.1.11"
+  }
 }
