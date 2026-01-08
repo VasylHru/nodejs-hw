@@ -1,8 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import pino from 'pino-http';
-import "dotenv/config";
-
+import 'dotenv/config';
 
 const PORT = process.env.PORT ?? 3000;
 const app = express();
@@ -43,12 +42,9 @@ app.get('/test-error', () => {
   throw new Error('Simulated server error');
 });
 
-
 app.use((req, res) => {
-  res.status(404).json({  message: "Route not found" });
+  res.status(404).json({ message: 'Route not found' });
 });
-
-
 
 app.use((err, req, res, next) => {
   console.error('Error:', err.message);
