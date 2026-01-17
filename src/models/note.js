@@ -10,6 +10,16 @@ const noteSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
-});
+   tag:{
+    type: String,
+
+   }
+
+},
+
+{
+  timestamps:true,
+}
+);
 
 export const Note = mongoose.model("Note", noteSchema);
